@@ -35,15 +35,22 @@
   </section>
 
   <section id="order">
-    <h2>Request a Garden Installation</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Email" required>
-      <input type="text" placeholder="Location">
-      <textarea placeholder="Describe Your Area & Garden Idea" required></textarea>
-      <button type="submit">Submit</button>
-    </form>
-  </section>
+  <h2>Request a Garden Installation</h2>
+  <form action="https://formsubmit.co/akshatojha500@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="text" name="location" placeholder="Location (City/Area)">
+    <input type="text" name="area" placeholder="Area Size (in sq ft or meters)">
+    <textarea name="message" placeholder="Describe your garden idea" required></textarea>
+
+    <!-- Optional hidden fields -->
+    <input type="hidden" name="_subject" value="New Garden Installation Request">
+    <input type="hidden" name="_template" value="table"> <!-- Format email nicely -->
+
+    <button type="submit">Submit Request</button>
+  </form>
+</section>
+
 
   <footer>
     <p>&copy; 2025 Green Garden Installers</p>
